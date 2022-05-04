@@ -15,7 +15,7 @@ const theme = {
   mobile: '595px'
 }
 
-export default function Home() {
+export function Home() {
   return (
     <>
       <ThemeProvider theme={theme}>
