@@ -1,7 +1,7 @@
 import styled from 'styled-components'
+import Pic from '../../atoms/Pic'
 import { Flex } from '../../styles/Flex.styled'
 import Hello from './Hello'
-import Photo from './Photo'
 
 
 const StyledIntro = styled.div`
@@ -22,7 +22,8 @@ export default function Intro() {
             <Hello />
             </Flex>
             <Flex justify="flex-end">
-            <Photo />
+            {/* <Photo /> */}
+            <Pic></Pic>
             </Flex>
         </StyledIntro>
     )
