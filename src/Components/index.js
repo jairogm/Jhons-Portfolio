@@ -1,6 +1,7 @@
 import { Logo } from "./Logo/Logo";
 import { Navbar } from "./Header/Navbar/Navbar"
 import { Intro } from "./Intro/Intro";
+import {Skills} from "./Skills/Skills"
 import { StyledLink } from "./Link/Link.styled";
 import { Section } from "./layouts/Section";
 import { Container } from "./layouts/Container";
@@ -13,6 +14,7 @@ export {
     Logo,
     Navbar,
     Intro,
+    Skills,
     Section,
     Container,
     Flex,
@@ -22,5 +24,5 @@ export {
     ButtonPrimaryLarge,
     ButtonSecondaryLarge,
     StyledLink,
-    Separator   
+    Separator,
 };

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
+import {FiMenu} from "react-icons/fi"
 
 export const Nav = styled.nav`
 position: sticky;
@@ -23,10 +24,18 @@ z-index: 1;
 box-shadow: 0px 2px 10px 2px RGBA(81, 130, 167, 0.25);
 }
 `
+
+
 export const List = styled.ul`
 display: inline-flex;
 list-style: none;
 gap: 14px;
+
+
+
+@media (max-width: 768px) {
+        display: none ;
+    }
 `
 export const ListItem = styled(Link)`
     cursor: pointer;
@@ -43,4 +52,12 @@ export const ListItem = styled(Link)`
         border-radius: 8px;
     }
 
+`
+
+export const HambugerMenu = styled(FiMenu)`
+
+display: none;
+@media (max-width: 768px) {
+    display: block ;
+}
 `

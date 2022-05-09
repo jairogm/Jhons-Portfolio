@@ -1,6 +1,5 @@
-
 import {Logo} from "../../index";
-import { Nav, List, ListItem } from "./Navbar.styled"
+import { Nav, List, ListItem, HambugerMenu } from "./Navbar.styled"
 export  function Navbar() {
   return (
     <Nav>
@@ -11,6 +10,7 @@ export  function Navbar() {
         <ListItem to="/projects">Projects</ListItem>
         <ListItem to="/contact">Contact</ListItem>
       </List>
+      <HambugerMenu size={30}/>
     </Nav>
   )
 }

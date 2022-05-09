@@ -7,6 +7,13 @@ const StyledImage = styled.img`
 width: 200px;
 height: 200px;
 border-radius: 50%;
+
+
+
+@media (max-width: 768px) {
+  width: 150px;
+  height: 150px;
+}
 `
 
 export default function Photo() {

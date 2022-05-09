@@ -1,24 +1,8 @@
 import logo from "../../Assets/Logo.svg";
-
-import styled from "styled-components";
 import { StyledLink } from "../index";
+import { StyledLogo } from "./Logo.styled";
 
-const StyledLogo = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
 
-    & > p {
-        font-size: 1.2rem;
-        color: rgba(81, 130, 167, 1);
-    }
-
-    &:hover {
-        cursor: pointer;
-    }
-
-`
 
 export function Logo() {
 

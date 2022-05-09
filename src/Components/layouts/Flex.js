@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Flex = styled.div`
     display: flex;
-    flex-direction: ${({ direction }) => direction || "row"};
+    flex-direction: ${({direction}) => direction || "row"};
     flex-wrap: ${({ wrap }) => wrap || "wrap"};
     justify-content: ${({ justify }) => justify || "flex-start"};
     align-items: ${({ align }) => align || "flex-start"};
@@ -12,6 +12,6 @@ export const Flex = styled.div`
     box-sizing: border-box;
 
     @media (max-width: 768px) {
-        flex-direction: column-reverse;
+        flex-direction: ${({ Mobiledirection }) => Mobiledirection || "row"};
     }
 `
