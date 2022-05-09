@@ -13,12 +13,9 @@ export const ButtonPrimary = styled.button`
     cursor: pointer;
     color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
     &:hover{
         transform: scale(0.98);
     }
-
-
     @media(max-width: 430px){
          span {
             display: none;
@@ -33,8 +30,6 @@ export const ButtonSecondary = styled(ButtonPrimary)`
 export const ButtonPrimaryLarge = styled(ButtonPrimary)`
     padding: 15px;
     font-size: 19px;
-
-
     @media(max-width: 430px){
          span {
             display: block;
