@@ -8,8 +8,8 @@ justify-content: space-between;
 width: 100%;
 max-width: 100%;
 height: auto;
-margin: 20px auto;
-padding: 10px;
+margin: 10px auto;
+padding: 0px;
 
 @media (max-width: 768px) {
     flex-direction: column;
