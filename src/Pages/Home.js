@@ -1,4 +1,4 @@
-import { Navbar, Intro, Container, Section, Separator, Skills } from "../Components"
+import { Navbar, Intro, Container, Section, Separator, Skills, Projects, Footer} from "../Components"
 import  GlobalStyles  from "../GlobalStyles"
 
 export function Home() {
@@ -15,6 +15,13 @@ export function Home() {
           <Skills />
         </Section>
         <Separator />
+        <Section>
+          <Projects />
+          <hr />
+        </Section>
+        <Section>
+          <Footer></Footer>
+        </Section>
       </Container>
     </>
   )

@@ -9,7 +9,8 @@ import { Flex } from "./layouts/Flex";
 import { Grid } from "./layouts/Grid";
 import { ButtonPrimary, ButtonSecondary, ButtonPrimaryLarge, ButtonSecondaryLarge } from "./Button/Button.styled";
 import { Separator } from "./Separator/Separator";
-
+import Projects from "./Projects/Projects";
+import Footer from "./Footer/Footer"
 export {
     Logo,
     Navbar,
@@ -25,4 +26,6 @@ export {
     ButtonSecondaryLarge,
     StyledLink,
     Separator,
+    Projects,
+    Footer
 };

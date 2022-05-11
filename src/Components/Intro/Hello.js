@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { BiUserCircle } from "react-icons/bi"
-import { ButtonPrimaryLarge, Flex, StyledLink } from "../index"
+import { ButtonPrimaryLarge, StyledLink } from "../index"
 const StyledHello = styled.div`
     width:400px;
     max-width: 100%;
@@ -16,10 +16,10 @@ export default function Hello() {
       <p>Passionate and creative Front-End Developer based in Colombia 🇨🇴.</p>
       <StyledLink to="/about">
         <ButtonPrimaryLarge>
-          <Flex align="center" gap="10px">
-            <BiUserCircle size={30} />
-            <span>More About me</span>
-          </Flex>
+
+          <BiUserCircle size={30} />
+          <span>More About me</span>
+
         </ButtonPrimaryLarge>
       </StyledLink>
 

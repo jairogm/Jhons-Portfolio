@@ -10,6 +10,11 @@ import bootstrap from "../../Assets/Skills/Bootstrap5.svg"
 import postman from "../../Assets/Skills/Postman.svg"
 import styledcomponents from "../../Assets/Skills/StyledComponents.svg"
 import nodejs from "../../Assets/Skills/nodejs.svg"
+import typescript from "../../Assets/Skills/typescript.svg"
+import mongodb from "../../Assets/Skills/mongodb.svg"
+import rust from "../../Assets/Skills/rust.svg"
+import solidity from "../../Assets/Skills/solidity.svg"
+
 export const CurrentSkills = [
 
     {
@@ -75,6 +80,34 @@ export const ComingSkills = [
         "skill": "NodeJS",
         "logo": nodejs,
         "color": "#8CC84B",
+
+    },
+
+    {
+        "skill": "TypeScript",
+        "logo": typescript,
+        "color": "#017ACB",
+
+    },
+
+    {
+        "skill": "MongoDB",
+        "logo": mongodb,
+        "color": "#6CAC48",
+
+    },
+
+    {
+        "skill": "Solidity",
+        "logo": solidity,
+        "color": "#000",
+
+    },
+
+    {
+        "skill": "Rust",
+        "logo": rust,
+        "color": "#000",
 
     }
 ]
