@@ -42,58 +42,57 @@ export const CurrentSkills = [
         "logo": reactjs,
         "color": "#61DAFB"
     },
-     {
+    {
         "skill": "Netlify",
         "logo": netlify,
         "color": "#25C7B7"
     },
-     {
+    {
         "skill": "GIT",
         "logo": git,
         "color": "#DE4C36"
     },
-     {
+    {
         "skill": "JSON",
         "logo": json,
         "color": "#000"
     },
-     {
+    {
         "skill": "Bootstrap5",
         "logo": bootstrap,
         "color": "#7952B3"
     },
-     {
+    {
         "skill": "Postman",
         "logo": postman,
         "color": "#FF6C37"
     },
-     {
+    {
         "skill": "Styled Components",
         "logo": styledcomponents,
         "color": "#E535AB"
     },
-]
-
-export const ComingSkills = [
-
     {
         "skill": "NodeJS",
         "logo": nodejs,
         "color": "#8CC84B",
 
     },
+    {
+        "skill": "MongoDB",
+        "logo": mongodb,
+        "color": "#6CAC48",
+
+    }
+]
+
+export const ComingSkills = [
+
 
     {
         "skill": "TypeScript",
         "logo": typescript,
         "color": "#017ACB",
-
-    },
-
-    {
-        "skill": "MongoDB",
-        "logo": mongodb,
-        "color": "#6CAC48",
 
     },
 

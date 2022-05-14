@@ -20,7 +20,7 @@ export function Home() {
           <hr />
         </Section>
         <Section>
-          <Footer></Footer>
+          <Footer/>
         </Section>
       </Container>
     </>
