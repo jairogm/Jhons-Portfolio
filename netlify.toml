@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/*"
-  to = "/something.html"
-  status = 404
+  to = "/"
+  status = 202
