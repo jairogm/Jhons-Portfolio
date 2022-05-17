@@ -1,7 +1,12 @@
 import React from 'react'
+import { Container, Footer, Navbar } from '../Components'
 
 export  function Blog() {
   return (
-    <div>Blog</div>
+    <Container>
+      <Navbar/>
+      
+      <Footer />
+    </Container>
   )
 }

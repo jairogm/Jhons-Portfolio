@@ -1,7 +1,15 @@
 import React from 'react'
+import { Container, Footer, Navbar, Section } from '../Components'
 
 export function Projects() {
   return (
-    <div>Projects</div>
+    
+    <Container>
+      <Navbar/>
+      <hr />
+      <Section>
+        <Footer/>
+      </Section>
+    </Container>
   )
 }

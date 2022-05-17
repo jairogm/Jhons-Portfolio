@@ -1,7 +1,6 @@
 import { Navbar } from "../Components/Header/Navbar/Navbar"
 import Footer from "../Components/Footer/Footer"
 import { Container, Section } from "../Components"
-import GlobalStyles from "../GlobalStyles"
 import styled from "styled-components"
 import SocialIcons from "../Components/SocialIcons/SocialIcons"
 import { useMemo, useState } from "react"
@@ -115,7 +114,6 @@ export function About() {
 
   return (
     <Container>
-      <GlobalStyles />
 
       <Navbar />
 
@@ -133,7 +131,7 @@ export function About() {
       <Section>
         <article>
           <p>
-            I’m Jhon Jairo Garces Montes, a front-end developer based in Colombia.
+            I’m Jhon Jairo Garces Montes, a front-end developer from Colombia.
           </p>
           <p>
             I am creative and passionate about design and technology so I always try to craft great-looking software products 🎨
