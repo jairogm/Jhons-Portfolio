@@ -22,11 +22,6 @@ const theme = extendTheme({
         bg: mode('white', '#1111')(props),
         lineHeight: 'base',
       },
-      colors:  {
-        text: {
-          color: "red",
-        }
-      }
     }),
   },
 })

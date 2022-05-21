@@ -21,7 +21,7 @@ export default function Projects() {
                     AllProjects.map((project, index) => <Project key={index} {...project} />)
                 }
             </Grid>
-            <StyledLink to="/projects"><Text margin="10px">View All Projects <b>&rarr;</b></Text> </StyledLink>
+            <StyledLink to="/projects"><Text margin="10px" _hover={{transform: "scale(0.999)"}}>View All Projects <b>&rarr;</b></Text> </StyledLink>
         </>
     )
 }

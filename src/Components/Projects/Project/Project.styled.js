@@ -4,7 +4,6 @@ export const StyledProject = styled.div`
 width: 100%;
 height: auto;
 margin: 0 auto; 
-border: 1px #c4c4c4 solid;
 box-sizing: border-box;
 
 border: 10px solid;

@@ -1,8 +1,8 @@
-import {  IconButton, useColorMode } from "@chakra-ui/react";
-import {BiMoon, BiSun} from "react-icons/bi"
+import { IconButton, useColorMode } from "@chakra-ui/react";
+import { BiMoon, BiSun } from "react-icons/bi"
 import { Nav, List, ListItem, HambugerMenu } from "./Navbar.styled"
 export function Navbar() {
-  const {colorMode, toggleColorMode} = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();
 
   const NavLinks = [
     {
@@ -31,23 +31,30 @@ export function Navbar() {
       <List>
         {
           NavLinks.map(({ name, path }) => (
-            <ListItem key={name} to={path} bg={colorMode === "light" ? "#eaeaea" : "#333"} color={colorMode === "light" ? "#444" : "#888"}>
+            <ListItem
+              key={name}
+              to={path}
+              bg={colorMode === "light" ? "#eaeaea" : "#333"}
+              color={colorMode === "light" ? "#444" : "#888"}
+              Activecolor={colorMode === "light" ? "#444" : "#fff"}
+              >
               {name}
             </ListItem>
           ))
         }
       </List>
-  
-     <IconButton
+
+      <IconButton
         aria-label="Toggle dark mode"
         icon={colorMode === "light" ? <BiMoon /> : <BiSun />}
         size="md"
         borderRadius="xl"
         _hover={{
           border: "2px",
-          borderColor: "gray.300"}}
+          borderColor: "gray.300"
+        }}
 
-          onClick={toggleColorMode}
+        onClick={toggleColorMode}
       />
       <HambugerMenu />
     </Nav>

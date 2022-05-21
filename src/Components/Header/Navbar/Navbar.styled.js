@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import styled from "styled-components"
 import { FiMenu } from "react-icons/fi"
 
@@ -32,7 +32,7 @@ gap: 14px;
         display: none ;
     }
 `
-export const ListItem = styled(Link)`
+export const ListItem = styled(NavLink)`
     cursor: pointer;
     text-decoration: none;
     font-family: 'poppins', sans-serif;
@@ -41,8 +41,13 @@ export const ListItem = styled(Link)`
     padding: 5px 10px;
     color: ${props => props.color};
     &:hover{ 
-        background: ${props => props.bg || ""};
+        background: ${props => props.bg};
         border-radius: 8px;
+    }
+
+    &.active{
+        color: ${props => props.Activecolor};
+        font-weight: 700;
     }
 
 `

@@ -24,7 +24,7 @@ export function Contact() {
               There is alwasy ways you can reach me:
             </h5>
             <ul>
-              <li><h5><Anchor href='https://www.linkedin.com/in/jhongarces/' target="_blank" rel="noreferrer">Connect</Anchor> With me on LinkedIn</h5></li>
+              <li><h5><Anchor href='https://www.linkedin.com/in/jhongarces/' target="_blank" rel="noreferrer">Connect</Anchor> with me on LinkedIn</h5></li>
               <li><h5>Send me an <Anchor href='mailto:contact@jhongarces.dev' target="_blank" rel="noreferrer"> Email</Anchor></h5></li>
             </ul>
             <h5>Please don't just say hello :)</h5>
