@@ -5,7 +5,7 @@ import Photo from "./Photo"
 
 export function Intro() {
     return (
-        <Flex Mobiledirection="column-reverse" justify="space-between">
+        <Flex Mobiledirection="column-reverse" justify="space-between" aling="center">
             <Hello />
             <Photo />
         </Flex>

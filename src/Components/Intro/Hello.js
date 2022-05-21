@@ -1,6 +1,5 @@
 import styled from "styled-components"
-import { BiUserCircle } from "react-icons/bi"
-import { ButtonPrimaryLarge, StyledLink } from "../index"
+import { Heading, Text } from "@chakra-ui/react"
 const StyledHello = styled.div`
     width:400px;
     max-width: 100%;
@@ -11,18 +10,11 @@ const StyledHello = styled.div`
 export default function Hello() {
   return (
     <StyledHello>
-      <h2>Hello There!</h2>
-      <p>I am Jhon Jairo Garces Montes</p>
-      <p>Passionate and creative Front-End Developer based in Colombia 🇨🇴.</p>
-      <StyledLink to="/about">
-        <ButtonPrimaryLarge>
-
-          <BiUserCircle size={30} />
-          <span>More About me</span>
-
-        </ButtonPrimaryLarge>
-      </StyledLink>
-
+      <Heading mb={2}>Jhon Garces Montes</Heading>
+      <Text fontSize='md' mb={2}>
+        React Developer at <b>Brick Lane</b>
+      </Text>
+      <Text fontSize="md" mb={2}>Passionate Front-End Developer based in Colombia </Text>
     </StyledHello>
   )
 }

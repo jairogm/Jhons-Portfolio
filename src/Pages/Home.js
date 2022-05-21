@@ -1,7 +1,8 @@
-import { Navbar, Intro, Container, Section, Separator, Skills, Projects, Footer} from "../Components"
-import  GlobalStyles  from "../GlobalStyles"
+import { Navbar, Intro, Container, Section, Separator, Skills, Projects, Footer } from "../Components"
+import GlobalStyles from "../GlobalStyles"
 
 export function Home() {
+
   return (
     <>
       <Container>
@@ -12,15 +13,16 @@ export function Home() {
         </Section>
         <Separator />
         <Section>
-          <Skills />
+          <Projects />
         </Section>
         <Separator />
         <Section>
-          <Projects />
+          <Skills />
+
           <hr />
         </Section>
         <Section>
-          <Footer/>
+          <Footer />
         </Section>
       </Container>
     </>

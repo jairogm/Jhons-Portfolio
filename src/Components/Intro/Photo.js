@@ -4,15 +4,14 @@ import defaultPic from "../../Assets/jhon-picture.svg"
 import { getPhoto } from "../../Services/getPhoto"
 
 const StyledImage = styled.img`
-width: 200px;
-height: 200px;
+width: 120px;
+height: 120px;
 border-radius: 50%;
 
 
-
 @media (max-width: 768px) {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 `
 
