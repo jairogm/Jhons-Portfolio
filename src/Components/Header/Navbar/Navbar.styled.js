@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom"
 import styled from "styled-components"
-import { FiMenu } from "react-icons/fi"
 
 export const Nav = styled.nav`
 width: 100%;

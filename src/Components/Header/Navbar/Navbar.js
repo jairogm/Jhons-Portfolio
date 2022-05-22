@@ -1,6 +1,6 @@
 import { IconButton, useColorMode } from "@chakra-ui/react";
 import { BiMoon, BiSun } from "react-icons/bi"
-import { Nav, List, ListItem, HambugerMenu } from "./Navbar.styled"
+import { Nav, List, ListItem } from "./Navbar.styled"
 export function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
 
@@ -16,7 +16,7 @@ export function Navbar() {
     {
       name: "Contact",
       path: "/contact"
-    },
+    }
     // {
     //   name: "Blog",
     //   path: "/blog"
@@ -37,7 +37,7 @@ export function Navbar() {
               bg={colorMode === "light" ? "#eaeaea" : "#333"}
               color={colorMode === "light" ? "#444" : "#888"}
               Activecolor={colorMode === "light" ? "#444" : "#fff"}
-              >
+            >
               {name}
             </ListItem>
           ))

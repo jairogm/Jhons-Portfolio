@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Flex, Footer, Grid, Navbar, Section } from '../Components'
 import GetInTouch from "../Assets/get-in-touch.svg"
 import styled from "styled-components"
-import { Heading } from '@chakra-ui/react'
+import { Heading, Text } from '@chakra-ui/react'
 export function Contact() {
 
   const Anchor = styled.a`
@@ -18,17 +18,17 @@ export function Contact() {
         <Heading mb={4}>Let's Get in Touch!</Heading>
         <Grid template="1fr 1fr">
           <Flex justify="start" align="start">
-            <h5>
+            <Text>
               I'm always open for a conversation, so please don't hesitate contacting me!
-            </h5>
-            <h5>
+            </Text>
+            <Text>
               There is alwasy ways you can reach me:
-            </h5>
+            </Text>
             <ul>
               <li><h5><Anchor href='https://www.linkedin.com/in/jhongarces/' target="_blank" rel="noreferrer">Connect</Anchor> with me on LinkedIn</h5></li>
               <li><h5>Send me an <Anchor href='mailto:contact@jhongarces.dev' target="_blank" rel="noreferrer"> Email</Anchor></h5></li>
             </ul>
-            <h5>Please don't just say hello :)</h5>
+            <Text>Please don't just say hello :)</Text>
           </Flex>
           <Flex justify="center" align="center">
 
