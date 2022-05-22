@@ -5,7 +5,7 @@ export  function Blog() {
   return (
     <Container>
       <Navbar/>
-      
+      <hr />
       <Footer />
     </Container>
   )

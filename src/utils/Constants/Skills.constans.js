@@ -84,15 +84,15 @@ export const ComingSkills = [
 
     {
         "skill": "Solidity",
-        "logo": <SiSolidity color="#363636" />,
-        "color": "#000",
+        "logo": <SiSolidity />,
+        "color": "#333",
 
     },
 
     {
         "skill": "Rust",
         "logo": <SiRust />,
-        "color": "#000",
+        "color": "#333",
 
     }
 ]

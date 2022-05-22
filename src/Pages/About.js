@@ -2,10 +2,10 @@ import { Navbar } from "../Components/Header/Navbar/Navbar"
 import Footer from "../Components/Footer/Footer"
 import { Container, Section } from "../Components"
 import styled from "styled-components"
-import SocialIcons from "../Components/SocialIcons/SocialIcons"
 import { useMemo, useState } from "react"
 import getRandomItem from "../Services/getRandomItem"
 import { FiMaximize, FiMinimize } from "react-icons/fi"
+import { Heading, Text } from "@chakra-ui/react"
 const Image = styled.div` 
   width: 100%;
   height: 300px;
@@ -19,7 +19,7 @@ const Image = styled.div`
 
   & > small {
     position: absolute;
-    bottom: -20px;
+    bottom: -25px;
   }
 
   & > img {
@@ -118,7 +118,7 @@ export function About() {
       <Navbar />
 
       <Section>
-        <h3>About Me</h3>
+        <Heading mb={4}>About Me</Heading>
         <Image active={OpenImg}>
           <img src={require(`../Assets/about/ab-${getImage.key}.jpg`)} alt={getImage.alt} />
           {/* Caption */}
@@ -130,28 +130,27 @@ export function About() {
       </Section>
       <Section>
         <article>
-          <p>
+          <Text mb={3}>
             I’m Jhon Jairo Garces Montes, a front-end developer from Colombia.
-          </p>
-          <p>
+          </Text>
+          <Text mb={3}>
             I am creative and passionate about design and technology so I always try to craft great-looking software products 🎨
-          </p>
-          <p>
+          </Text>
+          <Text mb={3}>
             Since I was a little boy and I got my first contact with a computer I got fascinated with technology, so I always looked for parts of computers, printers or even televisions and I repaired them or created little robots with them, they were not too functional but I was happy creating them.
-          </p>
-          <p>
+          </Text>
+          <Text mb={3}>
             After a few years, I discovered programming and at that moment my entire life changed, I started to go earlier to my school just to play with computers, I remember I broke some of them trying to install Linux since my main focus back then was to pursue  a CyberSecurity Degree, so when my teacher started to punish me I decided to save money and buy my own. 👨‍💻
-          </p>
-          <p>
+          </Text>
+          <Text mb={3}>
             When not coding, I like to watch TV shows and movies, play some games with friends or hang out with them 🤝 I'm also listening to music most of the time 🎧 According to Spotify Wrapped, I listened to <b>120260</b> minutes of music in 2021 😱
-          </p>
-          <p>
+          </Text>
+          <Text>
             I consider myself a curious and inquisitive person, so on my spare time I like to do some voluntering on my local commmuntity and learn something new to improve my skillset 🤓.
-          </p>
-          <p>
+          </Text>
+          <Text mb={3}>
             Learn even more about me on my timeline and please don't hesitate to contact me!
-          </p>
-          <SocialIcons />
+          </Text>
         </article>
       </Section>
       <hr />

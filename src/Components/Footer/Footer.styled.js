@@ -3,12 +3,13 @@ import styled from "styled-components"
 
 export const StyledFooter = styled.footer`
 display: flex;
-justify-content: space-between;
+flex-direction: column;
+justify-content: center;
 
 width: 100%;
 max-width: 100%;
 height: auto;
-margin: 10px auto;
+margin: 30px auto;
 padding: 0px;
 
 @media (max-width: 768px) {
@@ -20,11 +21,7 @@ padding: 0px;
 
 export const FooterList = styled.ul`
 list-style: none;
-display: grid;
-grid-template-columns: 1fr 1fr;
-flex-direction:column;
 
-gap: 10px;
 & > li {
     color: #c4c4c4;
     margin: 5px 0;
@@ -35,6 +32,15 @@ gap: 10px;
     }
 }
 
+`
+
+export const FooterLinks = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr;
+place-content: end;
+width: 100%;
+
+gap: 10px;
 `
 
 export const Anchor = styled.a`

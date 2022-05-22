@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const StyledSocial = styled.div`
-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +18,7 @@ width: 100%;
 
 
 export const StyledSocialIcon = styled.a`
-    color: rgba(0, 0, 0, 0.6);
+    
     cursor: pointer;
 
     &:hover {

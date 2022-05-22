@@ -1,14 +1,15 @@
 import { Flex, Grid } from "../index"
 import { CurrentSkills, ComingSkills } from "../../utils/Constants/Skills.constans"
 import Skill from "./Skill/Skill"
+import { Heading, Text } from "@chakra-ui/react"
 export function Skills() {
   return (
-    <Grid template="1fr 1fr" gap="10px">
+    <Grid template="1fr 1fr" gap="10px" margin="0 0 60px">
 
       <Flex direction="column">
         <div>
-          <h4>Skills 🚀</h4>
-          <p>I feel confident and comfortable with this skills</p>
+          <Heading  size="lg" mb={3}>Skills 🚀</Heading>
+          <Text mb={4}>I feel confident and comfortable with this skills</Text>
         </div>
         <Flex gap="10px">
           {
@@ -22,8 +23,8 @@ export function Skills() {
       </Flex>
       <Flex direction="column">
         <div>
-          <h4>Coming Soon 💡</h4>
-          <p>I have a basic foundation of this skills but still learning them</p>
+          <Heading size="lg" mb={3}>Coming Soon 💡</Heading>
+          <Text mb={4}>I have a basic foundation of this skills but still learning them</Text>
         </div>
         <Flex gap="10px">
           {
@@ -36,5 +37,6 @@ export function Skills() {
         </Flex>
       </Flex>
     </Grid>
+    
   )
 }

@@ -10,7 +10,7 @@ export default function Projects() {
         <>
             <Flex justify="space-between" margin=" 0 0 20px 0 ">
                 <Flex>
-                    <Heading>Featured Projects</Heading>
+                    <Heading size="lg">Featured Projects</Heading>
                 </Flex>
                 <Flex gap="20px">
                     <ButtonSecondary><IoDocumentTextOutline size={20} />Resume</ButtonSecondary>

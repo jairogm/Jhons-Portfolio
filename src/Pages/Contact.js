@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Flex, Footer, Grid, Navbar, Section } from '../Components'
 import GetInTouch from "../Assets/get-in-touch.svg"
 import styled from "styled-components"
+import { Heading } from '@chakra-ui/react'
 export function Contact() {
 
   const Anchor = styled.a`
@@ -14,7 +15,7 @@ export function Contact() {
     <Container>
       <Navbar />
       <Section>
-        <h4>Let's Get in Touch!</h4>
+        <Heading mb={4}>Let's Get in Touch!</Heading>
         <Grid template="1fr 1fr">
           <Flex justify="start" align="start">
             <h5>

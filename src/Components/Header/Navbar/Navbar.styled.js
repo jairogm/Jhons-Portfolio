@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import styled from "styled-components"
 import { FiMenu } from "react-icons/fi"
 
@@ -11,7 +11,7 @@ justify-content: space-between;
 justify-self: center;
 padding: 0;
 margin: 0 auto;
-margin-bottom: 20px;
+margin-bottom: 30px;
 box-sizing: border-box ;
 border-radius: 10px;
 z-index: 1;
