@@ -26,11 +26,6 @@ align-items: center;
 list-style: none;
 gap: 14px;
 
-
-
-@media (max-width: 768px) {
-        display: none ;
-    }
 `
 export const ListItem = styled(NavLink)`
     cursor: pointer;
@@ -50,12 +45,4 @@ export const ListItem = styled(NavLink)`
         font-weight: 700;
     }
 
-`
-
-export const HambugerMenu = styled(FiMenu)`
-
-display: none;
-@media (max-width: 768px) {
-    display: block ;
-}
 `

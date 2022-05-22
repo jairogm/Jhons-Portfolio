@@ -17,14 +17,14 @@ export function Navbar() {
       name: "Contact",
       path: "/contact"
     },
-    {
-      name: "Blog",
-      path: "/blog"
-    },
-    {
-      name: "Projects",
-      path: "/projects"
-    }
+    // {
+    //   name: "Blog",
+    //   path: "/blog"
+    // },
+    // {
+    //   name: "Projects",
+    //   path: "/projects"
+    // }
   ]
   return (
     <Nav>
@@ -56,7 +56,6 @@ export function Navbar() {
 
         onClick={toggleColorMode}
       />
-      <HambugerMenu />
     </Nav>
   )
 }

@@ -148,7 +148,7 @@ export function About() {
           <Text>
             I consider myself a curious and inquisitive person, so on my spare time I like to do some voluntering on my local commmuntity and learn something new to improve my skillset 🤓.
           </Text>
-          <Text mb={3}>
+          <Text mb={10}>
             Learn even more about me on my timeline and please don't hesitate to contact me!
           </Text>
         </article>
