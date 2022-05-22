@@ -1,26 +1,21 @@
 import { Navbar } from "../Components/Header/Navbar/Navbar"
 import Footer from "../Components/Footer/Footer"
-import { Container, Section } from "../Components"
+import { Container, Flex, Section } from "../Components"
 import styled from "styled-components"
 import { useMemo, useState } from "react"
 import getRandomItem from "../Services/getRandomItem"
 import { FiMaximize, FiMinimize } from "react-icons/fi"
-import { Heading, Text } from "@chakra-ui/react"
+import {  Box, Heading, Text } from "@chakra-ui/react"
 const Image = styled.div` 
   width: 100%;
   height: 300px;
-  margin: 0 auto;
+  margin: 0 auto 0.3rem;
+
   display: block;
-  margin-bottom: 3rem;
   border: 1px solid #c4c4c4;
   position: relative;
   display: flex;
   justify-content: center;
-
-  & > small {
-    position: absolute;
-    bottom: -25px;
-  }
 
   & > img {
     width: 100%;
@@ -47,8 +42,6 @@ const Image = styled.div`
     transition: width 1s;
     &:hover {
       width:80px;
-      
-      
     }
     
     &:hover > span {
@@ -119,14 +112,18 @@ export function About() {
 
       <Section>
         <Heading mb={4}>About Me</Heading>
-        <Image active={OpenImg}>
+       <Flex direction="column" margin="0 0 2rem">
+       <Image active={OpenImg}>
           <img src={require(`../Assets/about/ab-${getImage.key}.jpg`)} alt={getImage.alt} />
           {/* Caption */}
-          <small>{getImage.alt}</small>
           {!OpenImg ? <button onClick={() => setOpenImg(!OpenImg)}> <FiMaximize size={20} /><span>Resize</span></button>
             : <button onClick={() => setOpenImg(!OpenImg)}> <FiMinimize size={20} /><span>Close</span></button>
           }
         </Image>
+         <Box width="100%" textAlign="center">
+         <small>{getImage.alt}</small>
+         </Box>
+       </Flex>
       </Section>
       <Section>
         <article>
