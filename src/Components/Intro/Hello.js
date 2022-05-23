@@ -14,7 +14,7 @@ export default function Hello() {
       <Text fontSize='md' mb={3}>
         React Developer at <b>Brick Lane</b>
       </Text>
-      <Text fontSize="md" mb={2}>Passionate Front-End Developer based in Colombia </Text>
+      <Text fontSize="md" mb={2}>Passionate Front-End Developer based in Colombia 🇨🇴.</Text>
     </StyledHello>
   )
 }
