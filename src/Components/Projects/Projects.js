@@ -3,7 +3,7 @@ import { Flex, Grid } from "../index"
 import { IoDocumentTextOutline } from "react-icons/io5"
 import Project from "./Project/Project"
 import { Projects as AllProjects } from "../../utils/Constants/Projects.constant"
-import {  Heading, Text } from "@chakra-ui/react"
+import {  Heading } from "@chakra-ui/react"
 import { StyledLink } from "../Link/Link.styled"
 export default function Projects() {
     return (
