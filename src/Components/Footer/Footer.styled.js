@@ -45,7 +45,6 @@ gap: 10px;
 
 export const Anchor = styled.a`
 
-color: #c5c5c5;
 text-decoration: none;
 
   

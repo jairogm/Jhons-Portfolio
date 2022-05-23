@@ -3,7 +3,7 @@ import {
     SiFigma, SiReact, SiNetlify,
     SiGit, SiBootstrap, SiStyledcomponents,
     SiNodedotjs, SiMongodb,
-    SiTypescript, SiSolidity, SiRust
+    SiTypescript, SiSolidity, SiRust, SiNextdotjs
 } from "react-icons/si"
 
 export const CurrentSkills = [
@@ -52,6 +52,12 @@ export const CurrentSkills = [
         "skill": "Bootstrap5",
         "logo": <SiBootstrap color="#7952B3" />,
         "color": "#7952B3"
+    },
+    {
+        "skill": "NextJS",
+        "logo": <SiNextdotjs color="#036CB5"/>,
+        "color": "#036CB5",
+
     },
     {
         "skill": "Styled Components",

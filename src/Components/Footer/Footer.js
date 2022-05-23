@@ -2,7 +2,7 @@ import { Text } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { Flex } from '../layouts/Flex'
 import SocialIcons from '../SocialIcons/SocialIcons'
-import { StyledFooter } from './Footer.styled'
+import { Anchor, StyledFooter } from './Footer.styled'
 import { FaSpotify } from "react-icons/fa"
 import { getNowPlaying } from '../../lib/spotify'
 export default function Footer() {
@@ -21,9 +21,9 @@ export default function Footer() {
             <Flex mobileDirection="column" align="center" justify="space-between" gap="10px" margin="0 0 40px">
                 <Flex align="center" gap="5px">
                     <FaSpotify size={20} />
-                    <Text>
+                    <Anchor href="#!"><Text>
                         <b>{data ? <>{data.item.name} - {data.item.artists.map((artist, index)=> artist.name).join(', ')}</> : "Not Playing"}</b>
-                    </Text>
+                    </Text></Anchor>
                     <Text color="#888"> - Spotify</Text>
                 </Flex>
                 <SocialIcons />
