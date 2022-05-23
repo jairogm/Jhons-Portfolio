@@ -40,7 +40,7 @@ export const ListItem = styled(NavLink)`
     }
 
     &.active{
-        color: ${props => props.activeColor};
+        color: ${props => props.activecolor};
         font-weight: 700;
     }
 

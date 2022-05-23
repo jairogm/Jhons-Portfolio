@@ -36,7 +36,7 @@ export function Navbar() {
               to={path}
               bg={colorMode === "light" ? "#eaeaea" : "#333"}
               color={colorMode === "light" ? "#444" : "#888"}
-              activeColor={colorMode === "light" ? "#444" : "#fff"}
+              activecolor={colorMode === "light" ? "#444" : "#fff"}
             >
               {name}
             </ListItem>
