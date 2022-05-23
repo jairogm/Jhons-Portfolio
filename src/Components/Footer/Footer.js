@@ -7,9 +7,12 @@ import { FaSpotify } from "react-icons/fa"
 import { getNowPlaying } from '../../lib/spotify'
 export default function Footer() {
 
-    const [data, setData] = useState(null)
+    const [data, setData] = useState({})
     useEffect(() => {
-        getNowPlaying().then(res => res.json()).then(data => setData(data))
+
+     
+        getNowPlaying().then(res => res.json()).then(data => setData(data)).catch(err=>console.log(err))
+
     }, [])
 
     return (
@@ -18,7 +21,7 @@ export default function Footer() {
                 <Flex align="center" gap="5px">
                     <FaSpotify size={20} />
                     <Text>
-                        <b>{data ? <>{data.item.name} - {data.item.artists[0].name}</> : "Not Playing"}</b>
+                        <b>{data.length > 0 ? <>{data.item.name} - {data.item.artists[0].name}</> : "Not Playing"}</b>
                     </Text>
                     <Text color="#888"> - Spotify</Text>
                 </Flex>
