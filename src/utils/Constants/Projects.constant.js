@@ -1,16 +1,18 @@
 export const Projects = [
 
     {
-        "title": "Weather App",
-        "description": "brief description of the project",
+
+        "title": "Tasky",
+        "description": "Taks app on the Ethereum blockchain",
         "demoLink": "https://www.example.com",
         "sourceCode": "https://www.github.com",
         "borderColor": "linear-gradient(90deg, rgba(216,180,254,1) 0%, rgba(129,140,248,1) 100%)"
+
     },
-    
+
     {
-        "title": "NTF Marketplace",
-        "description": "brief description of the project",
+        "title": "Cuacane",
+        "description": "Forecast app dashboard",
         "demoLink": "https://www.example.com",
         "sourceCode": "https://www.github.com",
         "borderColor": "linear-gradient(90deg, rgba(110,231,183,1) 0%, rgba(59,130,246,1) 50%, rgba(147,51,234,1) 100%)"
