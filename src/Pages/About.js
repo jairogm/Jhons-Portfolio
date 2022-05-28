@@ -137,7 +137,7 @@ export function About() {
         <Text mb={3}>
           When not coding, I like to watch TV shows and movies, play some games with friends or hang out with them 🤝 I'm also listening to music most of the time 🎧 According to Spotify Wrapped, I listened to <b>120260</b> minutes of music in 2021 😱
         </Text>
-        <Text>
+        <Text mb={3}>
           I consider myself a curious and inquisitive person, so in my spare time I like to do some volunteering in my local community and learn something new to improve my skillset 🤓.
         </Text>
         <Text mb={10}>
