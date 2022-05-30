@@ -1,11 +1,10 @@
-import { Navbar } from "../Components/Header/Navbar/Navbar"
 import Footer from "../Components/Footer/Footer"
-import { Container, Flex, Section } from "../Components"
+import { Flex } from "../Components"
 import styled from "styled-components"
 import { useMemo, useState } from "react"
 import getRandomItem from "../Services/getRandomItem"
 import { FiMaximize, FiMinimize } from "react-icons/fi"
-import {  Box, Heading, Text } from "@chakra-ui/react"
+import { Box, Heading, Text } from "@chakra-ui/react"
 const Image = styled.div` 
   width: 100%;
   height: 300px;
@@ -106,55 +105,48 @@ export function About() {
 
 
   return (
-    <Container>
+    <>
 
-      <Navbar />
-
-      <Section>
-        <Heading mb={4}>About Me</Heading>
-       <Flex direction="column" margin="0 0 2rem">
-       <Image active={OpenImg}>
+      <Heading mb={4}>About Me</Heading>
+      <Flex direction="column" margin="0 0 2rem">
+        <Image active={OpenImg}>
           <img src={require(`../Assets/about/ab-${getImage.key}.jpg`)} alt={getImage.alt} />
           {/* Caption */}
           {!OpenImg ? <button onClick={() => setOpenImg(!OpenImg)}> <FiMaximize size={20} /><span>Resize</span></button>
             : <button onClick={() => setOpenImg(!OpenImg)}> <FiMinimize size={20} /><span>Close</span></button>
           }
         </Image>
-         <Box width="100%" textAlign="center">
-         <small>{getImage.alt}</small>
-         </Box>
-       </Flex>
-      </Section>
-      <Section>
-        <article>
-          <Text mb={3}>
-            I’m Jhon Jairo Garces Montes, a front-end developer from Colombia.
-          </Text>
-          <Text mb={3}>
-            I am creative and passionate about design and technology so I always try to craft great-looking software products 🎨
-          </Text>
-          <Text mb={3}>
-            Since I was a little boy and I got my first contact with a computer I got fascinated with technology, so I always looked for parts of computers, printers or even televisions and I repaired them or created little robots with them, they were not too functional but I was happy creating them.
-          </Text>
-          <Text mb={3}>
-            After a few years, I discovered programming and at that moment my entire life changed, I started to go earlier to my school just to play with computers, I remember I broke some of them trying to install Linux since my main focus back then was to pursue  a CyberSecurity Degree, so when my teacher started to punish me I decided to save money and buy my own. 👨‍💻
-          </Text>
-          <Text mb={3}>
-            When not coding, I like to watch TV shows and movies, play some games with friends or hang out with them 🤝 I'm also listening to music most of the time 🎧 According to Spotify Wrapped, I listened to <b>120260</b> minutes of music in 2021 😱
-          </Text>
-          <Text>
-            I consider myself a curious and inquisitive person, so on my spare time I like to do some voluntering on my local commmuntity and learn something new to improve my skillset 🤓.
-          </Text>
-          <Text mb={10}>
-            Learn even more about me on my timeline and please don't hesitate to contact me!
-          </Text>
-        </article>
-      </Section>
-      <hr />
-      <Section>
-        <Footer />
-      </Section>
+        <Box width="100%" textAlign="center">
+          <small>{getImage.alt}</small>
+        </Box>
+      </Flex>
 
-    </Container>
+      <article>
+        <Text mb={3}>
+          I’m Jhon Jairo Garces Montes, a front-end developer from Colombia.
+        </Text>
+        <Text mb={3}>
+          I am creative and passionate about design and technology so I always try to craft great-looking software products 🎨
+        </Text>
+        <Text mb={3}>
+          Since I was a little boy and I got my first contact with a computer I got fascinated with technology, so I always looked for parts of computers, printers, or even televisions and I repaired them or created little robots with them, they were not too functional but I was happy creating them.
+        </Text>
+        <Text mb={3}>
+          After a few years, I discovered programming and at that moment my entire life changed, I started to go earlier to my school just to play with computers, I remember I broke some of them trying to install Linux since my main focus back then was to pursue  a CyberSecurity Degree, so when my teacher started to punish me I decided to save money and buy my own. 👨‍💻
+        </Text>
+        <Text mb={3}>
+          When not coding, I like to watch TV shows and movies, play some games with friends or hang out with them 🤝 I'm also listening to music most of the time 🎧 According to Spotify Wrapped, I listened to <b>120260</b> minutes of music in 2021 😱
+        </Text>
+        <Text mb={3}>
+          I consider myself a curious and inquisitive person, so in my spare time I like to do some volunteering in my local community and learn something new to improve my skillset 🤓.
+        </Text>
+        <Text mb={10}>
+         Want to talk ? or grab a pizza? please don't hesitate to contact me!
+        </Text>
+      </article>
+      <hr />
+      <Footer />
+
+    </>
   )
 }

@@ -4,6 +4,7 @@ import { Home, About, Blog, Contact, Projects } from './Pages';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { ChakraProvider, ColorModeScript, extendTheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools'
+import { Container, Navbar } from './Components';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const config = {
@@ -29,16 +30,19 @@ const theme = extendTheme({
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Blog" element={<Blog />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Contact" element={<Contact />} />
-        </Routes>
-      </Router>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+      <Container>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Blog" element={<Blog />} />
+            <Route path="/Projects" element={<Projects />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </Router>
+      </Container>
     </ChakraProvider>
   </React.StrictMode>
 );
