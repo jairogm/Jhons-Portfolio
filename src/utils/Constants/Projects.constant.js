@@ -3,7 +3,7 @@ export const Projects = [
     {
 
         "title": "Tasky",
-        "description": "Taks app on the Ethereum blockchain",
+        "description": "Taks app on the Rinkeby blockchain",
         "demoLink": "https://tasky.jhongarces.dev",
         "sourceCode": "https://github.com/jairogm/tasky-app",
         "borderColor": "linear-gradient(90deg, rgba(216,180,254,1) 0%, rgba(129,140,248,1) 100%)"
