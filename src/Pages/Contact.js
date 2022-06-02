@@ -23,7 +23,7 @@ export function Contact() {
             I'm always open for a conversation, so please don't hesitate contacting me!
           </Text>
           <Text>
-            There is alwasy ways you can reach me:
+            There's a few ways you can reach me:
           </Text>
           <Text>
             <List>
