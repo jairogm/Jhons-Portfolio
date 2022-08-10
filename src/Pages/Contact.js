@@ -28,7 +28,7 @@ export function Contact() {
           <Text>
             <List>
               <li><Text>&rarr;  <Anchor href='https://www.linkedin.com/in/jhongarces/' target="_blank" rel="noreferrer">Connect</Anchor> with me on LinkedIn</Text></li>
-              <li><Text>&rarr;  Send me an <Anchor href='mailto:contact@jhongarces.dev' target="_blank" rel="noreferrer"> Email</Anchor></Text></li>
+              <li><Text>&rarr;  Send me an <Anchor href='mailto:jhongarcesmontes@gmail.com' target="_blank" rel="noreferrer"> Email</Anchor></Text></li>
             </List>
           </Text>
           <Text>Please don't just say hello :)</Text>
