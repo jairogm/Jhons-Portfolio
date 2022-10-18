@@ -14,7 +14,7 @@ export default function Hello() {
 const [user, setUser] = useState({})
   
 useEffect(() => {
-  getInfo().then(info => setUser(info)).catch(setUser(defaultInfo))
+  getInfo().then(info => setUser(info)).catch(setUser({}))
 }, [])
   return (
     <StyledHello>
