@@ -18,7 +18,7 @@ useEffect(() => {
 }, [])
   return (
     <StyledHello>
-      <Heading mb={2} size="xl">{user.name}</Heading>
+      <Heading mb={2} size="lg">{user.name}</Heading>
       <Text fontSize='md' mb={3}>
         React Developer at <b>{user.company}</b>
       </Text>
