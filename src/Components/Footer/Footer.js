@@ -31,7 +31,7 @@ export default function Footer() {
             </Flex>
 
             <Flex justify="center" align="center">
-                <Text mt={6}>Jhon Jairo Garces Montes © 2022</Text>
+                <Text mt={6}>Jhon Jairo Garces Montes © 2023</Text>
             </Flex>
 
         </StyledFooter>
