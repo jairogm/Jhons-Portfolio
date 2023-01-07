@@ -15,7 +15,7 @@ export default function Projects() {
                     <Heading size="lg">Featured Projects</Heading>
                 </Flex>
                 <Flex gap="20px">
-                    <StyledLink to="/cv/cv-jhon-garces-montes-en.pdf" target="_blank"><ButtonSecondary><IoDocumentTextOutline size={20} />Resume</ButtonSecondary></StyledLink>
+                    <StyledLink to="/cv/Jhon-Jairo-Garces-Montes-CV-ENG.pdf" target="_blank"><ButtonSecondary><IoDocumentTextOutline size={20} />Resume</ButtonSecondary></StyledLink>
                 </Flex>
             </Flex>
             {/* Featured Projects */}
