@@ -75,18 +75,16 @@ export const CurrentSkills = [
         "logo": <SiMongodb color="#6CAC48" />,
         "color": "#6CAC48",
 
-    }
-]
-
-export const ComingSkills = [
-
-
+    },
     {
         "skill": "TypeScript",
         "logo": <SiTypescript color="#017ACB" />,
         "color": "#017ACB",
 
-    },
+    }
+]
+
+export const ComingSkills = [
 
     {
         "skill": "Solidity",
