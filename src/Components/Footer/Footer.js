@@ -9,7 +9,7 @@ export default function Footer() {
 
     const [data, setData] = useState(null)
 
-    console.log(data)
+    console.log({data})
     useEffect(() => {
 
         getNowPlaying().then(res => res.json())
@@ -22,7 +22,7 @@ export default function Footer() {
             <Flex mobileDirection="column" align="center" justify="space-between" gap="10px" margin="0 0 40px">
                 <Flex align="center" gap="5px">
                     <FaSpotify size={20} />
-                    <Anchor href={ data ? data.item.external_urls.spotify : "#!"} target="_blank"><Text>
+                    <Anchor href={ data && data.currently_playing_type != 'episode' ? data.item.external_urls.spotify : "#!"} target="_blank"><Text>
                         <b>{data ? <>{data.item.name} - {data.item.artists.map((artist)=> artist.name).join(', ')}</> : "Not Playing"}</b>
                     </Text></Anchor>
                     <Text color="#888"> - Spotify</Text>
