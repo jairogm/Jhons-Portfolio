@@ -29,7 +29,7 @@ export const getNowPlaying = async () => {
 
   return fetch(NOW_PLAYING_ENDPOINT, {
     headers: {
-      Authorization: `Bearer ${access_token}`
+      Authorization: `Bearer BQBNpt3LexocDIy7V_ETH8M19wLQYinDhC8kKodziCABGIqpJSnlkDp0DcgT9lcVcicLkyAfK4SAPloNOXgNbzMy87v7f78WB5hw12F8fjUTrN8JNvJzfe78oX5ShR6SVCTkbIbFTKdMBlaBa-Da6D0FvYMsBdcSZhy80bMjFTv_R3sF7VfGUbMtcmc`
     }
   });
 };
