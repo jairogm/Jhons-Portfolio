@@ -20,7 +20,7 @@ const getAccessToken = async () => {
       refresh_token
     })
   });
-  console.log(response.json())
+  console.log(response)
   return response.json();
 };
 
