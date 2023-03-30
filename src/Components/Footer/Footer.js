@@ -9,7 +9,6 @@ export default function Footer() {
 
     const [data, setData] = useState(null)
 
-    console.log({data})
     // useEffect(() => {
 
     //     getNowPlaying().then(res => res.json())
