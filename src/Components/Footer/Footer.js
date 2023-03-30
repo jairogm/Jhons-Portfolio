@@ -10,13 +10,13 @@ export default function Footer() {
     const [data, setData] = useState(null)
 
     console.log({data})
-    useEffect(() => {
+    // useEffect(() => {
 
-        getNowPlaying().then(res => res.json())
-        .then(data => setData(data))
-        .catch(err => console.log(err))
+    //     getNowPlaying().then(res => res.json())
+    //     .then(data => setData(data))
+    //     .catch(err => console.log(err))
 
-    }, [])
+    // }, [])
     return (
         <StyledFooter>
             <Flex mobileDirection="column" align="center" justify="space-between" gap="10px" margin="0 0 40px">
